@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Fine Video Control",
+  "version": "1.0",
+  "description": "Forwards/Rewinds the video player by custom seconds when a hotkey combination is pressed.",
+  "permissions": ["activeTab", "scripting", "storage", "commands"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "forward": {
+      "suggested_key": {
+        "default": "Alt+2"
+      },
+      "description": "Forward video"
+    },
+    "rewind": {
+      "suggested_key": {
+        "default": "Alt+1"
+      },
+      "description": "Rewind video"
+    }
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}

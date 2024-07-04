@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fine Video Control</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      width: 300px;
+    }
+    h1 {
+      font-size: 16px;
+    }
+    label, input {
+      display: block;
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Fine Video Control Settings</h1>
+  <label for="forwardSeconds">Forward Seconds:</label>
+  <input type="number" id="forwardSeconds">
+  
+  <label for="rewindSeconds">Rewind Seconds:</label>
+  <input type="number" id="rewindSeconds">
+  
+  <p>Default hotkeys: Alt+1 and Alt+2</p>
+  <p class="note">To change hotkeys, visit chrome://extensions/shortcuts</p>
+
+  <button id="saveButton">Save Settings</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
