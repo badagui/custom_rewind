@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Fine Video Control",
-  "version": "1.0",
-  "description": "Forwards/Rewinds the video player by custom seconds when a hotkey combination is pressed.",
+  "version": "1.0.1",
+  "description": "This browser extension finds the video player with document.querySelector('video') and moves its currentTime by a custom amount. Default hokeys are Alt+1 and Alt+2. Those can be changed using the built in extensions hotkeys manager. Works on Youtube, Twitch and other sites.",
   "permissions": ["activeTab", "scripting", "storage", "commands"],
   "background": {
     "service_worker": "background.js"
